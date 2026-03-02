@@ -35,6 +35,31 @@ else:
 
     
     # Multiplica as matrizes A e B manualmente com loops aninhados
+    for i in range(linhas_A):  # Percorre as linhas de A ou usa "for i in range(2):  # Percorre as 2 linhas de A (índices 0 e 1)"
+        print(f"entra no laço do I, i vale = ", i)
+        for j in range(colunas_B):  # Percorre as colunas de B
+            print(f"  entra no laço do J, j vale = {j}")
+            soma = 0  # Variável para armazenar a soma dos produtos
+            for k in range(colunas_A):  # Percorre os elementos da linha de A e coluna de B
+                print(f"  entra no laço do K, k vale = {k}")
+                soma += A[i][k] * B[k][j]  # Multiplica e acumula o resultado
+                
+                print(f"  k={k} | {A[i][k]} * {B[k][j]} | deu: {soma}")
+            resultado[i][j] = soma  # Atribui o resultado final para a posição correta
+
+
+    # Exibe o resultado da multiplicacao das matrizes
+    print("\nResultado da multiplicacao de A e B:")
+    print(resultado)
+
+
+
+
+
+
+
+
+
 
 
 
