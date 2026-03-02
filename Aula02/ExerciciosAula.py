@@ -48,3 +48,50 @@ while True:
         #print("\n O vetor normalizado é {:.2f} {:.2f} {:.2f}".format(xn, yn, zn) )
         print("----------------------\n")
 
+    # c)
+    elif op == 3:
+        print("\n DIGITE OS VALORES DO VETOR 02") #print mostra uma mensagem na tela
+        x2 = float(input("Digite o valor de x2: "))
+        y2 = float(input("Digite o valor de y2: "))
+        z2 = float(input("Digite o valor de z2: "))
+        print("\n A soma dos vetores é ",x+x2,",",y+y2,",",z+z2)
+        print("----------------------\n")    
+
+    # c)
+    elif op == 4:
+        print("\n DIGITE OS VALORES DO VETOR 02") #print mostra uma mensagem na tela
+        x2 = float(input("Digite o valor de x2: "))
+        y2 = float(input("Digite o valor de y2: "))
+        z2 = float(input("Digite o valor de z2: "))
+        print("\n A soma dos vetores é ",x-x2,",",y-y2,",",z-z2)
+        print("----------------------\n") 
+
+
+    # e)
+    elif op == 5:
+        escalar = float(input("Digite o escalar: "))
+        print("\n A multiplicação pelo escalar é ",x*escalar,",",y*escalar,",",z*escalar)
+        print("----------------------\n")
+
+
+    # f)
+    elif op == 6:
+        escalar = float(input("Digite o escalar: "))
+        print("\n A divisão pelo escalar é", round(x/escalar, 2), ",", round(y/escalar, 2), ",", round(z/escalar, 2))
+        print("----------------------\n")
+
+    # g)
+    elif op == 7:
+        print("\n DIGITE OS VALORES DO VETOR 02") #print mostra uma mensagem na tela
+        x2 = float(input("Digite o valor de x2: "))
+        y2 = float(input("Digite o valor de y2: "))
+        z2 = float(input("Digite o valor de z2: "))
+        produtoEscalar = x*x2 + y*y2 + z*z2
+        print("\n Produto escalar = ",produtoEscalar)
+        print("----------------------\n")
+      
+    elif op == 8:
+        break #sai do laço
+
+    else:
+        print("Opção inválida!")
