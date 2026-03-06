@@ -1,0 +1,34 @@
+# Importa a biblioteca NumPy para facilitar a manipulação de matrizes
+import numpy as np
+
+# Define a matriz A
+A = np.array([[1, 0, 0],
+              [0, 1, 0],
+              [0, 0, 1]])
+
+# Exibe a matriz inicial
+print("Matriz A:")
+print(A)
+
+# Obtém as dimensões da matriz
+linhas, colunas = A.shape
+
+# Verifica se a matriz é quadrada (condição necessária para ser identidade)
+if linhas != colunas:
+    print("\nA matriz não é quadrada, portanto, não pode ser identidade.")
+else:
+    # Variável para indicar se é identidade
+    eh_identidade = True
+
+    # Percorre a matriz verificando as condições da matriz identidade
+    for i in range(linhas):
+        for j in range(colunas):
+            if (i == j and A[i][j] != 1) or (i != j and A[i][j] != 0):
+                eh_identidade = False
+                break
+
+    # Exibe o resultado
+    if eh_identidade:
+        print("\nA matriz é identidade.")
+    else:
+        print("\nA matriz não é identidade.")
