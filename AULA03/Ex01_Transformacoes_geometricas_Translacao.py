@@ -29,13 +29,6 @@ for ponto in pontos_transladados:
 # Plotar os pontos originais e os pontos transladados
 #plt.plot([p1[0], p2[0]], [p1[1], p2[1]], 'bo-', label='Pontos originais')
 
-# Plotar os pontos transladados da mesma forma
-# Pegando o X do primeiro [0][0] e o X do segundo [1][0]
-#lista_x = [ pontos_transladados[0][0], pontos_transladados[1][0] ]
-# Pegando o Y do primeiro [0][1] e o Y do segundo [1][1]
-#lista_y = [ pontos_transladados[0][1], pontos_transladados[1][1] ]
-#plt.plot(lista_x, lista_y, 'ro-', label='Pontos transladados')
-
 # Plotar os PONTOS ORIGINAIS
 plt.plot([p1[0], p2[0]], [p1[1], p2[1]], 'bo-', label='Pontos originais')
 
